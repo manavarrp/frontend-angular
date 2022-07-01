@@ -1,0 +1,36 @@
+
+<div class="container">
+    <h2>Guardar productos</h2>
+    <form action="">
+        <div class="form-group">
+            <label>Nombre :</label>
+            <input type = "text"
+            class="form-control"
+            id="nombre"
+            [(ngModel)] ="producto.nombre"
+            name = "nombre"
+            >
+        </div>
+        <div class="form-group">
+            <label>Descripcion :</label>
+            <input type = "text"
+            class="form-control"
+            id="descripcion"
+            [(ngModel)] ="producto.descripcion"
+            name = "descripcion"
+            >
+        </div>
+        <div class="form-group">
+            <label>Precio :</label>
+            <input type = "text"
+            class="form-control"
+            id="precio"
+            [(ngModel)] ="producto.precio"
+            name = "precio"
+            >
+        </div>
+        
+        <button style="margin-top: 2px;" (click)="crearProducto()" type="submit" class="btn btn-success" [routerLink]="['']">Guardar</button>
+        
+    </form>
+</div>
